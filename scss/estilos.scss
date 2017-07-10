@@ -2,15 +2,26 @@
 ***
 ****                     Estilos propios*****************
 ***********************************************************/
+//FUENTES
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
 
 /*********************************************************
 ****              Estilos del HEADER                  ****
 **********************************************************/
 
+
 header{
     background-color: #f2f3f3;
 }
 
+header h1{
+    color: #2f4152;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 4rem;
+}
 
 
 .experience, .education{
