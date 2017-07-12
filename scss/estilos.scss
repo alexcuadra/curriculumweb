@@ -4,7 +4,7 @@
 ***********************************************************/
 //FUENTES
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,700,900|Roboto');
 
 
 /*********************************************************
@@ -14,7 +14,10 @@
 
 header{
     background-color: #f2f3f3;
+    padding: 3rem 0;
 }
+
+
 
 header h1{
     color: #2f4152;
@@ -23,7 +26,35 @@ header h1{
     font-size: 4rem;
 }
 
+header h3{
+    color: #2f4152;
+    font-family: 'Open Sans';
+    font-weight: bold;
+        margin-bottom: 2rem;
+}
 
+//ESTILOS NAVBAR
+
+nav {
+    background-color: #2f4152;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+nav ul{
+        list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-item {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+}
 .experience, .education{
     background-color: #2f4152;
 }
