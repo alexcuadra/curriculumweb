@@ -38,13 +38,14 @@ header h3{
 nav {
     background-color: #2f4152;
     border-radius: 10px;
-    display: flex;
+    
     
 }
 
 nav ul{
         list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: 0;
     padding: 0;
