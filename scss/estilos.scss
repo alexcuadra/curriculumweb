@@ -2,11 +2,51 @@
 ***
 ****                     Estilos propios*****************
 ***********************************************************/
-//FUENTES
+/*FUENTES*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,700,900|Roboto');
 
+$fuente-principal:'Open Sans', sans-serif;
 
+/* colores */
+
+$blanco: #eee8d6;
+$azulOscuro: #292b2c;
+$amarillo: #ffba00;
+$azul: #0076a3;
+$verde: #548c27;
+$rojo: #fe2d28;
+$morado: #6d73c2;
+$negro: #000000;
+
+/* colores de contenido*/
+$color-fondo: $azul;
+$color-principal: $negro;
+$color-titulos:$amarillo;
+$fondo-section:$azulOscuro;
+$color-borde-noticia:$blanco;
+$color-header-noticia:$blanco;
+$color-texto-noticia:$blanco;
+
+
+/*******************************************
+*               mixins                  ***
+******************************************/
+
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet}) {
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop}) {
+      @content;
+  }
+}
 /*********************************************************
 ****              Estilos del HEADER                  ****
 **********************************************************/
@@ -38,21 +78,24 @@ header h3{
 nav {
     background-color: #2f4152;
     border-radius: 10px;
-    
-    
+
+
 }
 
 .navbar{
     padding: 0;
 }
 
-nav ul{
+nav {
+
+  ul{
         list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
     padding: 0;
+  }
 }
 
 
@@ -65,5 +108,45 @@ i.fa.fa-bars {
     font-size: 3rem;
 }
 .experience, .education{
-    background-color: #2f4152;
+    background-color: $fondo-section;
+}
+
+.datos{
+  padding: 0.3rem;
+
+  h4{
+    background-color: #292B2C;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+
+    }
+
+  ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    a{
+      color: #2f4152;
+      &:hover{
+        color:#2f41ff;
+      }
+    }
+
+  }
+}
+
+.skills{
+  h4{
+    background-color: #292B2C;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.3rem;
+
+    }
 }
