@@ -95,7 +95,7 @@ i.fa.fa-bars {
 *************************************************/
 div.chart {
   position: relative;
-  margin: 80px;
+  margin: auto;
   width: 220px;
   height: 220px; }
 
@@ -119,3 +119,7 @@ span {
 /**
 * fin de los estilos de progress bar *
 **/
+.skilltype {
+  text-align: center; }
+  .skilltype h3 {
+    margin: 1rem 0 2.3rem; }
