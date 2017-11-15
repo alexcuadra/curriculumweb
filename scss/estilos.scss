@@ -237,3 +237,75 @@ span {
 
   }
 }
+
+/* estilos caja education*/
+
+.education{
+  h2{
+    color: $blanco;
+    background-color: $color-etiqueta;
+    padding: 0.3rem;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  h3{
+    color: $blanco;
+    background-color: $color-etiqueta;
+    padding: 0.3rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  ul{
+
+      li{
+        list-style-type: disc;
+        p{
+          span {
+              color: #555;
+              display: block;
+              text-align: center;
+              width: 220px;
+              font-family: sans-serif;
+              font-size: 1.5rem;
+              font-weight: 100;
+              margin-top: 1rem;
+              margin-left: 0px;
+              line-height: 3rem;
+          }
+
+          color:#fff;
+        }
+      }
+
+  }
+}
+
+/* estilos del social foot*/
+
+.contact{
+  text-align: center;
+  margin-top: 1rem;
+  span{
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    display: inline;
+  }
+
+  p{
+    font-size: 1.3rem;
+  }
+}
+
+.social-foot{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding:  0.3rem 0 3rem 0;
+  font-size: 1.5rem;
+}
