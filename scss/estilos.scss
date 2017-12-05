@@ -153,6 +153,46 @@ i.fa.fa-bars {
     }
 }
 
+/********************************************
+*                                            *
+*         estract styles                     *
+*                                            *
+* *******************************************/
+
+.resumen{
+  @include tablet{
+    padding: 3rem 0;
+    .resena{
+      p{
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+}
+
+.datos{
+  p{
+    font-size: 1.2rem;
+  }
+
+  ul{
+    font-size: 2rem;
+  }
+  @include tablet{
+    padding: 2rem 0;
+    p{
+      display: inline-block;
+      margin-left: 0.8rem;
+      margin-bottom: 1.8rem;
+    }
+
+    ul{
+      font-size: 3rem;
+    }
+  }
+}
+
 /***********************************************
 *                                               *
 *      ESTILOS DE LOS PROGRESS BAR              *
@@ -308,4 +348,7 @@ span {
   margin: 0;
   padding:  0.3rem 0 3rem 0;
   font-size: 1.5rem;
+  @include tablet{
+    font-size: 2rem; 
+  }
 }
