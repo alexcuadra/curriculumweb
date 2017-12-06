@@ -88,6 +88,33 @@ i.fa.fa-bars {
   padding: 0.5rem;
   margin-bottom: 1.3rem; }
 
+/********************************************
+*                                            *
+*         estract styles                     *
+*                                            *
+* *******************************************/
+@media only screen and (min-width: 768px) {
+  .resumen {
+    padding: 3rem 0; }
+    .resumen .resena p {
+      line-height: 2.5rem; } }
+
+.datos p {
+  font-size: 1.2rem; }
+
+.datos ul {
+  font-size: 2rem; }
+
+@media only screen and (min-width: 768px) {
+  .datos {
+    padding: 2rem 0; }
+    .datos p {
+      display: inline-block;
+      margin-left: 0.8rem;
+      margin-bottom: 1.8rem; }
+    .datos ul {
+      font-size: 3rem; } }
+
 /***********************************************
 *                                               *
 *      ESTILOS DE LOS PROGRESS BAR              *
@@ -123,3 +150,95 @@ span {
   text-align: center; }
   .skilltype h3 {
     margin: 1rem 0 2.3rem; }
+
+/* estilos caja experince */
+.experience h2 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.experience h3 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.experience ul li {
+  list-style-type: disc; }
+  .experience ul li p {
+    color: #fff; }
+    .experience ul li p span {
+      color: #555;
+      display: block;
+      text-align: center;
+      width: 220px;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-top: 1rem;
+      margin-left: 0px;
+      line-height: 3rem; }
+
+/* estilos caja education*/
+.education h2 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.education h3 {
+  color: #eee8d6;
+  background-color: #3699DB;
+  padding: 0.3rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 0.5rem; }
+
+.education ul li {
+  list-style-type: disc; }
+  .education ul li p {
+    color: #fff; }
+    .education ul li p span {
+      color: #555;
+      display: block;
+      text-align: center;
+      width: 220px;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-top: 1rem;
+      margin-left: 0px;
+      line-height: 3rem; }
+
+/* estilos del social foot*/
+.contact {
+  text-align: center;
+  margin-top: 1rem; }
+  .contact span {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    display: inline; }
+  .contact p {
+    font-size: 1.3rem; }
+
+.social-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0.3rem 0 3rem 0;
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 768px) {
+    .social-foot {
+      font-size: 2rem; } }
