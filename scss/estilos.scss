@@ -11,7 +11,7 @@ $fuente-principal:'Open Sans', sans-serif;
 /* colores */
 
 $blanco: #eee8d6;
-$azulOscuro: #292b2c;
+$azulOscuro: #343a40;
 $amarillo: #ffba00;
 $azul: #0076a3;
 $verde: #548c27;
@@ -77,12 +77,6 @@ header h3{
 
 //ESTILOS NAVBAR
 
-nav {
-    background-color: #2f4152;
-    border-radius: 10px;
-
-
-}
 
 .navbar{
     padding: 0;
@@ -90,15 +84,22 @@ nav {
 
 nav {
 
-  ul{
-        list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+  //background-color: #2f4152;
+  border-radius: 10px;
+
+    a{
+      color: #fff!important;
+    }
+    .navbar-collapse{
+      justify-content: space-around;
+    }
+
+    nav-item {
+      margin: 0 1rem;
   }
+
 }
+
 
 
 .nav-item {
@@ -117,7 +118,7 @@ i.fa.fa-bars {
   padding: 0.3rem;
 
   h4{
-    background-color: #292B2C;
+    background-color: $azulOscuro;
     color: #fff;
     text-align: center;
     padding: 0.5rem;
@@ -144,7 +145,7 @@ i.fa.fa-bars {
 
 .skills{
   h4{
-    background-color: #292B2C;
+    background-color: $azulOscuro;
     color: #fff;
     text-align: center;
     padding: 0.5rem;
@@ -191,6 +192,14 @@ i.fa.fa-bars {
       font-size: 3rem;
     }
   }
+
+  @include desktop{
+    padding: 2rem 0;
+
+    ul{
+      font-size: 2rem;
+    }
+  }
 }
 
 /***********************************************
@@ -202,6 +211,10 @@ div.chart {
     position:relative;
     margin:auto;
     width:220px; height:220px;
+
+    @include desktop{
+        width:200px; height:200px;
+      }
 }
 canvas {
     display: block;
@@ -235,6 +248,13 @@ span {
 /* estilos caja experince */
 
 .experience{
+
+  .job-title{
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
   h2{
     color: $blanco;
     background-color: $color-etiqueta;
@@ -258,19 +278,6 @@ span {
       li{
         list-style-type: disc;
         p{
-          span {
-              color: #555;
-              display: block;
-              text-align: center;
-              width: 220px;
-              font-family: sans-serif;
-              font-size: 1.5rem;
-              font-weight: 100;
-              margin-top: 1rem;
-              margin-left: 0px;
-              line-height: 3rem;
-          }
-
           color:#fff;
         }
       }
@@ -278,51 +285,7 @@ span {
   }
 }
 
-/* estilos caja education*/
 
-.education{
-  h2{
-    color: $blanco;
-    background-color: $color-etiqueta;
-    padding: 0.3rem;
-    margin: 1rem 0;
-    text-align: center;
-    border-radius: 0.5rem;
-  }
-
-  h3{
-    color: $blanco;
-    background-color: $color-etiqueta;
-    padding: 0.3rem;
-    margin: 1rem;
-    text-align: center;
-    border-radius: 0.5rem;
-  }
-
-  ul{
-
-      li{
-        list-style-type: disc;
-        p{
-          span {
-              color: #555;
-              display: block;
-              text-align: center;
-              width: 220px;
-              font-family: sans-serif;
-              font-size: 1.5rem;
-              font-weight: 100;
-              margin-top: 1rem;
-              margin-left: 0px;
-              line-height: 3rem;
-          }
-
-          color:#fff;
-        }
-      }
-
-  }
-}
 
 /* estilos del social foot*/
 
@@ -349,6 +312,6 @@ span {
   padding:  0.3rem 0 3rem 0;
   font-size: 1.5rem;
   @include tablet{
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 }

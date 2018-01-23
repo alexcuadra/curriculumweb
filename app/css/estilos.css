@@ -28,26 +28,18 @@ header h3 {
   font-weight: bold;
   margin-bottom: 2rem; }
 
-nav {
-  background-color: #2f4152;
-  border-radius: 10px; }
-
 .navbar {
   padding: 0; }
 
-nav ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0; }
+nav {
+  border-radius: 10px; }
+  nav a {
+    color: #fff !important; }
+  nav .navbar-collapse {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  nav nav-item {
+    margin: 0 1rem; }
 
 .nav-item {
   color: white;
@@ -57,12 +49,12 @@ i.fa.fa-bars {
   font-size: 3rem; }
 
 .experience, .education {
-  background-color: #292b2c; }
+  background-color: #343a40; }
 
 .datos {
   padding: 0.3rem; }
   .datos h4 {
-    background-color: #292B2C;
+    background-color: #343a40;
     color: #fff;
     text-align: center;
     padding: 0.5rem;
@@ -82,7 +74,7 @@ i.fa.fa-bars {
         color: #2f41ff; }
 
 .skills h4 {
-  background-color: #292B2C;
+  background-color: #343a40;
   color: #fff;
   text-align: center;
   padding: 0.5rem;
@@ -115,6 +107,12 @@ i.fa.fa-bars {
     .datos ul {
       font-size: 3rem; } }
 
+@media only screen and (min-width: 1024px) {
+  .datos {
+    padding: 2rem 0; }
+    .datos ul {
+      font-size: 2rem; } }
+
 /***********************************************
 *                                               *
 *      ESTILOS DE LOS PROGRESS BAR              *
@@ -125,6 +123,10 @@ div.chart {
   margin: auto;
   width: 220px;
   height: 220px; }
+  @media only screen and (min-width: 1024px) {
+    div.chart {
+      width: 200px;
+      height: 200px; } }
 
 canvas {
   display: block;
@@ -152,6 +154,11 @@ span {
     margin: 1rem 0 2.3rem; }
 
 /* estilos caja experince */
+.experience .job-title {
+  list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: bold; }
+
 .experience h2 {
   color: #eee8d6;
   background-color: #3699DB;
@@ -172,50 +179,6 @@ span {
   list-style-type: disc; }
   .experience ul li p {
     color: #fff; }
-    .experience ul li p span {
-      color: #555;
-      display: block;
-      text-align: center;
-      width: 220px;
-      font-family: sans-serif;
-      font-size: 1.5rem;
-      font-weight: 100;
-      margin-top: 1rem;
-      margin-left: 0px;
-      line-height: 3rem; }
-
-/* estilos caja education*/
-.education h2 {
-  color: #eee8d6;
-  background-color: #3699DB;
-  padding: 0.3rem;
-  margin: 1rem 0;
-  text-align: center;
-  border-radius: 0.5rem; }
-
-.education h3 {
-  color: #eee8d6;
-  background-color: #3699DB;
-  padding: 0.3rem;
-  margin: 1rem;
-  text-align: center;
-  border-radius: 0.5rem; }
-
-.education ul li {
-  list-style-type: disc; }
-  .education ul li p {
-    color: #fff; }
-    .education ul li p span {
-      color: #555;
-      display: block;
-      text-align: center;
-      width: 220px;
-      font-family: sans-serif;
-      font-size: 1.5rem;
-      font-weight: 100;
-      margin-top: 1rem;
-      margin-left: 0px;
-      line-height: 3rem; }
 
 /* estilos del social foot*/
 .contact {
